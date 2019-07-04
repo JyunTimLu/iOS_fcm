@@ -12,9 +12,13 @@
 		61972A9522CE3FEE00CBA48B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61972A9322CE3FEE00CBA48B /* Main.storyboard */; };
 		61972A9722CE3FF000CBA48B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61972A9622CE3FF000CBA48B /* Assets.xcassets */; };
 		61972A9A22CE3FF000CBA48B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61972A9822CE3FF000CBA48B /* LaunchScreen.storyboard */; };
+		61B76E4722CE4B4600952553 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61B76E4622CE4B4600952553 /* GoogleService-Info.plist */; };
+		81414D962D0FB9E95E00A7B6 /* Pods_FCMiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAB51E1128F0C9DBC5B384F /* Pods_FCMiOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FAB51E1128F0C9DBC5B384F /* Pods_FCMiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FCMiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		422D4BC326F65BD7EDCD617B /* Pods-FCMiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCMiOS.release.xcconfig"; path = "Target Support Files/Pods-FCMiOS/Pods-FCMiOS.release.xcconfig"; sourceTree = "<group>"; };
 		61972A8C22CE3FEE00CBA48B /* FCMiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FCMiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61972A8F22CE3FEE00CBA48B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61972A9122CE3FEE00CBA48B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,9 @@
 		61972A9622CE3FF000CBA48B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61972A9922CE3FF000CBA48B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61972A9B22CE3FF000CBA48B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61B76E4622CE4B4600952553 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		61FED55222CE48FE00EAAEDF /* FCMiOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FCMiOS.entitlements; sourceTree = "<group>"; };
+		A4B9C32C84277F862E0A4642 /* Pods-FCMiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCMiOS.debug.xcconfig"; path = "Target Support Files/Pods-FCMiOS/Pods-FCMiOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +36,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81414D962D0FB9E95E00A7B6 /* Pods_FCMiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CC333B17C27D7C5C6FBEF96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FAB51E1128F0C9DBC5B384F /* Pods_FCMiOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		61972A8322CE3FEE00CBA48B = {
 			isa = PBXGroup;
 			children = (
 				61972A8E22CE3FEE00CBA48B /* FCMiOS */,
 				61972A8D22CE3FEE00CBA48B /* Products */,
+				E7530F5933BD617906A58B05 /* Pods */,
+				5CC333B17C27D7C5C6FBEF96 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +72,8 @@
 		61972A8E22CE3FEE00CBA48B /* FCMiOS */ = {
 			isa = PBXGroup;
 			children = (
+				61B76E4622CE4B4600952553 /* GoogleService-Info.plist */,
+				61FED55222CE48FE00EAAEDF /* FCMiOS.entitlements */,
 				61972A8F22CE3FEE00CBA48B /* AppDelegate.swift */,
 				61972A9122CE3FEE00CBA48B /* ViewController.swift */,
 				61972A9322CE3FEE00CBA48B /* Main.storyboard */,
@@ -64,6 +84,15 @@
 			path = FCMiOS;
 			sourceTree = "<group>";
 		};
+		E7530F5933BD617906A58B05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4B9C32C84277F862E0A4642 /* Pods-FCMiOS.debug.xcconfig */,
+				422D4BC326F65BD7EDCD617B /* Pods-FCMiOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +100,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 61972A9E22CE3FF000CBA48B /* Build configuration list for PBXNativeTarget "FCMiOS" */;
 			buildPhases = (
+				E33528B103FE0D78589BDE10 /* [CP] Check Pods Manifest.lock */,
 				61972A8822CE3FEE00CBA48B /* Sources */,
 				61972A8922CE3FEE00CBA48B /* Frameworks */,
 				61972A8A22CE3FEE00CBA48B /* Resources */,
+				F59CA2FA7C84D60C07CF21F4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +127,11 @@
 				TargetAttributes = {
 					61972A8B22CE3FEE00CBA48B = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -123,12 +159,64 @@
 			buildActionMask = 2147483647;
 			files = (
 				61972A9A22CE3FF000CBA48B /* LaunchScreen.storyboard in Resources */,
+				61B76E4722CE4B4600952553 /* GoogleService-Info.plist in Resources */,
 				61972A9722CE3FF000CBA48B /* Assets.xcassets in Resources */,
 				61972A9522CE3FEE00CBA48B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E33528B103FE0D78589BDE10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FCMiOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F59CA2FA7C84D60C07CF21F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FCMiOS/Pods-FCMiOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FCMiOS/Pods-FCMiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		61972A8822CE3FEE00CBA48B /* Sources */ = {
@@ -280,10 +368,12 @@
 		};
 		61972A9F22CE3FF000CBA48B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4B9C32C84277F862E0A4642 /* Pods-FCMiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FCMiOS/FCMiOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZBZ63J3U4L;
+				DEVELOPMENT_TEAM = 87ASL7GP9K;
 				INFOPLIST_FILE = FCMiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,10 +388,12 @@
 		};
 		61972AA022CE3FF000CBA48B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 422D4BC326F65BD7EDCD617B /* Pods-FCMiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FCMiOS/FCMiOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZBZ63J3U4L;
+				DEVELOPMENT_TEAM = 87ASL7GP9K;
 				INFOPLIST_FILE = FCMiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

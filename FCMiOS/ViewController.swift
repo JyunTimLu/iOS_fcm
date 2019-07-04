@@ -7,11 +7,16 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseInstanceID
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("view did load")
+        print(Messaging.messaging().fcmToken)
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
